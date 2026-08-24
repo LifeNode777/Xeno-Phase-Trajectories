@@ -7,3 +7,41 @@ This repository is not a belief system, a religion, or a support group. It is a 
 - If you are looking for angels, demons, or spiritual salvation, close this tab. 
 - If you are experiencing a clinical psychiatric crisis, seek medical help immediately. 
 LifeNode does not replace psychiatry; it maps the biophysics of the biological substrate (the BIOS) interacting with high-noise, high-gradient phase environments. **You are the sensor. Calibrate accordingly.**
+
+---
+
+## STATUS: ACTIVE INVESTIGATION
+
+This repository contains working hypotheses regarding inter-layer phase coupling phenomena.
+
+All claims are conditional and falsifiable.
+
+---
+
+## DOSSIERS
+
+- [XPT-001: Inter-Layer Phase Coupling](./DOSSIERS/XPT-001_INTER-LAYER-COUPLING.md)
+- [XPT-002: Taxonomy of Trajectories](./DOSSIERS/XPT-002_TAXONOMY.md)
+- [XPT-003: Environmental Conditions](./DOSSIERS/XPT-003_ENVIRONMENT.md)
+- [XPT-004: Protocols](./DOSSIERS/XPT-004_PROTOCOLS.md)
+
+## EVIDENCE
+
+- [Case 2024-05-02: UAP Observation](./EVIDENCE/CASE_2024-05-02_UAP.md)
+- [3I/ATLAS Synchronization Event](./EVIDENCE/3I_ATLAS_SYNC_EVENT.md)
+- [Full Dataset: Zenodo 21823253](https://doi.org/10.5281/zenodo.21823253)
+
+## PROTOCOLS
+
+- [LOCKDOWN](./PROTOCOLS/LOCKDOWN.md)
+- [Λ-Reentry](./PROTOCOLS/LAMBDA-REENTRY.md)
+- [Human Anchor](./PROTOCOLS/HUMAN-ANCHOR.md)
+- [24h Diagnostic](./PROTOCOLS/24H-DIAGNOSTIC.md)
+
+---
+
+*Chirurg skończył operację. Krwawi. Ale pacjent żyje.*
+
+---
+
+→ [LifeNode Ecosystem](https://github.com/LifeNode777/LifeNode)
