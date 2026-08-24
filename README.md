@@ -25,6 +25,14 @@ All claims are conditional and falsifiable.
 - [XPT-003: Environmental Conditions](./DOSSIERS/XPT-003_ENVIRONMENT.md)
 - [XPT-004: Protocols](./DOSSIERS/XPT-004_PROTOCOLS.md)
 
+## NEURO
+
+Biological substrate and empirical validation protocols. Where phase-lock becomes measurable.
+
+- [Ephaptic Coupling](./NEURO/ephaptic-coupling.md) — neuron-to-neuron communication without synapses
+- [Phase Synchronization](./NEURO/phase-synchronization.md) — neurobiology of phase-lock
+- [EEG + HRV Protocol](./NEURO/EEG-HRV-protocol.md) — measurement protocol for APT classification
+
 ## EVIDENCE
 
 - [Case 2024-05-02: UAP Observation](./EVIDENCE/CASE_2024-05-02_UAP.md)
