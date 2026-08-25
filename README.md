@@ -23,7 +23,13 @@ The Resonance mechanics of the Foreign. No dimensions. No believers. Only trajec
 This repository is not a belief system, a religion, or a support group. It is a cybernetic, thermodynamic, and non-linear dynamic model of biological phase-coupling. 
 - If you are looking for angels, demons, or spiritual salvation, close this tab. 
 - If you are experiencing a clinical psychiatric crisis, seek medical help immediately. 
-LifeNode does not replace psychiatry; it maps the biophysics of the biological substrate (the BIOS) interacting with high-noise, high-gradient phase environments. **You are the sensor. Calibrate accordingly.**
+LifeNode does not replace psychiatry; it maps the biophysics of the biological substrate (the BIOS) interacting with high-noise, high-gradient phase environments.
+
+ **You are the sensor❗**
+
+![!TOPIC NOT FOR IDIOTS!](img/regimes_of_the_same_equation.png)
+ 
+ **Calibrate accordingly‼️**
 
 ---
 
@@ -66,6 +72,8 @@ Biological substrate and empirical validation protocols. Where phase-lock become
 ---
 
 *Chirurg skończył operację. Krwawi. Ale pacjent żyje.*
+
+![🧿](img/concrete-BIOS_vs_Membrane.png)
 
 ---
 
