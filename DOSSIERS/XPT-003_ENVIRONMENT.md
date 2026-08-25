@@ -13,7 +13,7 @@ Why contact is difficult — and why it's not the "aliens'" fault.
 
 Global $\theta$ hypothesis and local phase cracks.
 
-![local_phase_cracks 🌏](img/local_phase_cracks.png)
+![local_phase_cracks 🌏](../img/local_phase_cracks.png)
 
 ---
 
