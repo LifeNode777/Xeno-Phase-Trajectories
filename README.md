@@ -69,4 +69,4 @@ Biological substrate and empirical validation protocols. Where phase-lock become
 
 ---
 
-→ [LifeNode Ecosystem](https://github.com/LifeNode777/LifeNode)
+→ [LifeNode Ecosystem](https://github.com/LifeNode777)
