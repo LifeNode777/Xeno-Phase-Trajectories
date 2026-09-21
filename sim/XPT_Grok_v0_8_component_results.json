@@ -1,0 +1,352 @@
+{
+  "protocol": "XPT_v0.8_component_Grok",
+  "date": "2026-09-21",
+  "seed": 20260921,
+  "N_RUNS": 8,
+  "N_NULL": 64,
+  "m": 4,
+  "tau": 1,
+  "min_embed_points": 12,
+  "components_frac": {
+    "onset": [0.0, 0.15],
+    "deformation": [0.15, 0.7],
+    "relaxation": [0.7, 0.9],
+    "new_regime": [0.9, 1.0]
+  },
+  "gates": {
+    "primary": "q95(D_CC) < q05(D_CN)",
+    "secondary": "median(D_CN)/median(D_CC) > 10",
+    "shift": "±5 and ±10 must keep primary and ratio>10"
+  },
+  "results": [
+    {
+      "system": "NLSE",
+      "n_runs": 8,
+      "n_null_target": 64,
+      "oracle": {
+        "n_valid_windows": 8,
+        "components": {
+          "onset": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.0189049483617998,
+            "q05_dcn": 0.3673364516790847,
+            "median_dcc": 0.013536546113965788,
+            "median_dcn": 0.8640744648565251,
+            "ratio": 63.83271312946298,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 56.890590126116905},
+              "shift_10": {"primary_holds": true, "ratio": 69.31741547494262}
+            }
+          },
+          "deformation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.019914510480508105,
+            "q05_dcn": 0.2933042310527549,
+            "median_dcc": 0.008354986235472974,
+            "median_dcn": 0.7387226190648029,
+            "ratio": 88.41697619182061,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 77.73556854015796},
+              "shift_10": {"primary_holds": true, "ratio": 86.95756745637966}
+            }
+          },
+          "relaxation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.014257857627228348,
+            "q05_dcn": 0.35021480201458927,
+            "median_dcc": 0.009375397008380257,
+            "median_dcn": 0.7800594510667898,
+            "ratio": 83.20281801074971,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 87.01254102173682},
+              "shift_10": {"primary_holds": true, "ratio": 101.25559292991639}
+            }
+          },
+          "new_regime": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.0176440115026932,
+            "q05_dcn": 0.35456821044735926,
+            "median_dcc": 0.013120806366992381,
+            "median_dcn": 0.8607676801773094,
+            "ratio": 65.6032606610762,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 62.483934703226716},
+              "shift_10": {"primary_holds": true, "ratio": 61.37904948198003}
+            }
+          }
+        }
+      },
+      "detector": {
+        "n_valid_windows": 8,
+        "components": {
+          "onset": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.021761302433893594,
+            "q05_dcn": 0.3779444214250129,
+            "median_dcc": 0.014832656675479144,
+            "median_dcn": 0.8160654675229377,
+            "ratio": 55.01815928039581,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 60.70449482715827},
+              "shift_10": {"primary_holds": true, "ratio": 60.01002712043473}
+            }
+          },
+          "deformation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.07439451587891584,
+            "q05_dcn": 0.32844412828945413,
+            "median_dcc": 0.01196845835551118,
+            "median_dcn": 0.6014186231683433,
+            "ratio": 50.250300022258486,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 58.122850194531814},
+              "shift_10": {"primary_holds": true, "ratio": 54.52377691697667}
+            }
+          },
+          "relaxation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.024120764277867142,
+            "q05_dcn": 0.2784285266654259,
+            "median_dcc": 0.010702927725399372,
+            "median_dcn": 0.7771285978416034,
+            "ratio": 72.60897371075215,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 75.66185682161814},
+              "shift_10": {"primary_holds": true, "ratio": 60.83074949622665}
+            }
+          },
+          "new_regime": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.018954381049188364,
+            "q05_dcn": 0.3071057273883923,
+            "median_dcc": 0.01208245154564,
+            "median_dcn": 0.7727723500131811,
+            "ratio": 63.95824118094966,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 56.40347023117959},
+              "shift_10": {"primary_holds": true, "ratio": 66.10691577997054}
+            }
+          }
+        }
+      }
+    },
+    {
+      "system": "Duffing",
+      "n_runs": 8,
+      "n_null_target": 64,
+      "oracle": {
+        "n_valid_windows": 8,
+        "components": {
+          "onset": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.019687610318896338,
+            "q05_dcn": 0.3208453385031293,
+            "median_dcc": 0.0021831105680407007,
+            "median_dcn": 0.9679469331217145,
+            "ratio": 443.3797111753383,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 406.1599158020336},
+              "shift_10": {"primary_holds": true, "ratio": 414.56995612678924}
+            }
+          },
+          "deformation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.011442542296240484,
+            "q05_dcn": 0.7266867415654408,
+            "median_dcc": 0.0033749092272687053,
+            "median_dcn": 1.1143231952561117,
+            "ratio": 330.1787159940675,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 326.33195806788746},
+              "shift_10": {"primary_holds": true, "ratio": 318.8221040400262}
+            }
+          },
+          "relaxation": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.01847682528660829,
+            "q05_dcn": 0.6921115745531847,
+            "median_dcc": 0.005253990734627323,
+            "median_dcn": 1.1260774398146443,
+            "ratio": 214.3280216299276,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 214.5397529693589},
+              "shift_10": {"primary_holds": true, "ratio": 203.88361702398504}
+            }
+          },
+          "new_regime": {
+            "status": "STABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 0.028148014467669565,
+            "q05_dcn": 0.4892984875977253,
+            "median_dcc": 0.004373810209470233,
+            "median_dcn": 0.9825846357720099,
+            "ratio": 224.6518684428749,
+            "primary": true,
+            "secondary": true,
+            "shift_ok": true,
+            "shift_details": {
+              "shift_5": {"primary_holds": true, "ratio": 172.84576827740273},
+              "shift_10": {"primary_holds": true, "ratio": 199.17908533405713}
+            }
+          }
+        }
+      },
+      "detector": {
+        "error": "too few valid windows"
+      }
+    },
+    {
+      "system": "VanDerPol",
+      "n_runs": 8,
+      "n_null_target": 64,
+      "oracle": {
+        "n_valid_windows": 8,
+        "components": {
+          "onset": {
+            "status": "UNSTABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 1.1690355260692975,
+            "q05_dcn": 0.5086881251005442,
+            "median_dcc": 1.1670366156934397,
+            "median_dcn": 1.0272540216195725,
+            "ratio": 0.8802243287021375,
+            "primary": false,
+            "secondary": false,
+            "shift_ok": false,
+            "shift_details": {
+              "shift_5": {"primary_holds": false, "ratio": 0.9038596371753218},
+              "shift_10": {"primary_holds": false, "ratio": 0.9201383751016576}
+            }
+          },
+          "deformation": {
+            "status": "UNSTABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 1.33368545876251,
+            "q05_dcn": 0.9467569941121668,
+            "median_dcc": 1.3331497504214203,
+            "median_dcn": 1.279787471160717,
+            "ratio": 0.9599727793191762,
+            "primary": false,
+            "secondary": false,
+            "shift_ok": false,
+            "shift_details": {
+              "shift_5": {"primary_holds": false, "ratio": 0.9329501516860125},
+              "shift_10": {"primary_holds": false, "ratio": 0.9451203455361521}
+            }
+          },
+          "relaxation": {
+            "status": "UNSTABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 1.2662698812284998,
+            "q05_dcn": 0.6624439127569561,
+            "median_dcc": 1.207766179695158,
+            "median_dcn": 1.1885734030399464,
+            "ratio": 0.9841088639689713,
+            "primary": false,
+            "secondary": false,
+            "shift_ok": false,
+            "shift_details": {
+              "shift_5": {"primary_holds": false, "ratio": 0.979340252199838},
+              "shift_10": {"primary_holds": false, "ratio": 0.9906346836352509}
+            }
+          },
+          "new_regime": {
+            "status": "UNSTABLE",
+            "n_clean": 8,
+            "null_used": 64,
+            "null_rejected": 0,
+            "q95_dcc": 1.1947378730920353,
+            "q05_dcn": 0.529145490918224,
+            "median_dcc": 1.1544087555703677,
+            "median_dcn": 0.9607998098602887,
+            "ratio": 0.8322873550847064,
+            "primary": false,
+            "secondary": false,
+            "shift_ok": false,
+            "shift_details": {
+              "shift_5": {"primary_holds": false, "ratio": 0.8960158973592587},
+              "shift_10": {"primary_holds": false, "ratio": 0.8534581437768937}
+            }
+          }
+        }
+      },
+      "detector": {
+        "error": "too few valid windows"
+      }
+    }
+  ]
+}
