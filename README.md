@@ -5,7 +5,6 @@ To examine the fabric of reality fragmented by a reductionist paradigm and claim
 
 [![LifeNode Hub](https://img.shields.io/badge/Hub-LifeNode777-101010?style=for-the-badge&logo=github)](https://github.com/LifeNode777)
 [![Zenodo Archive](https://img.shields.io/badge/DOI-Zenodo_Archive-0277BD?style=for-the-badge)](https://zenodo.org/communities/project_lifenode)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey?style=for-the-badge)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 | **Theory & Core** | **Engineering & Applications** | **Narrative Layer** |
 | :--- | :--- | :--- |
