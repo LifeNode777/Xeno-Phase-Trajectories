@@ -22,4 +22,4 @@ All claims are conditional and falsifiable.
 
 ---
 
-![FIELD_RESEARCH](FIELD_RESEARCH.png)
+![FIELD_RESEARCH](../img/FIELD_RESEARCH.png)
