@@ -56,6 +56,8 @@ PAC allows integration of time scales: slow rhythms (large networks, behavior) o
 
 ### 1.4 Brain-Body Axis and Interoception
 
+![brain-body_axis](../img/brain-body_axis.png)
+
 This is particularly relevant in the context of BIOS / $\theta$.
 
 - **Vagus nerve** and baroreflex: respiratory rhythm and heart rate variability (HRV) modulate the phase and power of cortical oscillations (especially alpha and theta in insula and prefrontal cortex).
