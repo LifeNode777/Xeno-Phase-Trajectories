@@ -19,3 +19,7 @@ All claims are conditional and falsifiable.
 ---
 
 **STATUS:** Working hypotheses. Requires empirical validation.
+
+---
+
+![FIELD_RESEARCH](FIELD_RESEARCH.png)
