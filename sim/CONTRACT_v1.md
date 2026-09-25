@@ -37,4 +37,4 @@ The XPT transition-signature v0.8 component profile methodology is **structurall
 
 **Diff Status:** RESOLVED. Synthetic benchmark phase closed.
 
-![visualisation](img/HM3AM.png)
+![visualisation](../img/HM3AM.png)
