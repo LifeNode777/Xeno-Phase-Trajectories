@@ -7,7 +7,7 @@
 
 ---
 
-![ephaptic-coupling](../img/ephaptic-coupling.md)
+![ephaptic-coupling](../img/electric_field_coupling_without_synapses.png)
 
 ## ABSTRACT
 
