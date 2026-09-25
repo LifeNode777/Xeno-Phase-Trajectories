@@ -36,3 +36,5 @@ and evaluated the 4 component slices (onset, deformation, relaxation, new_regime
 The XPT transition-signature v0.8 component profile methodology is **structurally sound and reproducible** across independent reasoning engines. The metrological patch (clean-window inheritance, native R^4 Procrustes, strict dual-gate separation) successfully prevents false positives and correctly isolates transition geometry where it exists (NLSE, Duffing-onset) while rejecting it where it does not (VanDerPol).
 
 **Diff Status:** RESOLVED. Synthetic benchmark phase closed.
+
+![visualisation](img/HM3AM.png)
