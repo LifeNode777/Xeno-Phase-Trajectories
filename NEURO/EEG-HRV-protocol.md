@@ -23,7 +23,7 @@ This is a **research protocol**, not an operational protocol for field operators
 - Autonomic correlates (HRV time- and frequency-domain + respiratory sinus arrhythmia)
 - Mapping to APT classes based on marker combinations
 
----
+![observable_states_of_consciousness_in_brain-body](../img/observable_states_of_consciousness_in_brain-body.png)
 
 ## 2. EQUIPMENT (Minimum and Recommended)
 
