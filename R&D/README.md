@@ -1,4 +1,4 @@
-![XPT_R&D_1](../../img/XPT_R&D_1.png)
+![XPT_R&D_1](../img/XPT_R&D_1.png)
 # XPT — R&D
 
 Research & Development layer of the **Xeno-Phase-Trajectories** repository.
@@ -7,7 +7,7 @@ This directory contains the next-stage development of XPT beyond the currently i
 
 Its purpose is to turn the current XPT framework into an increasingly characterized, testable and experimentally transferable system.
 
-![XPT_R&D_2](../../img/XPT_R&D_2.png)
+![XPT_R&D_2](../img/XPT_R&D_2.png)
 
 ## CURRENT DIRECTION
 
@@ -19,7 +19,7 @@ Before extending XPT into biological systems or unknown physical observations, t
 
 The current development therefore follows two connected tracks:
 
-![XPT_R&D_3](../../img/XPT_R&D_3.png)
+![XPT_R&D_3](../img/XPT_R&D_3.png)
 
 ### 01 — INSTRUMENT CHARACTERIZATION
 
@@ -85,7 +85,7 @@ In particular:
 
 A reproducible computational result establishes reproducibility of that result under the specified conditions. It does not by itself establish the physical interpretation behind it.
 
-![XPT_R&D_4](../../img/XPT_R&D_4.png)
+![XPT_R&D_4](../img/XPT_R&D_4.png)
 
 ## WORKING PRINCIPLE
 
