@@ -50,6 +50,8 @@ The Van der Pol oscillator represents classical relaxation oscillations—the ki
 
 ## 4. Theoretical Implications: Decoherence Is Your Failure, Not the Universe's
 
+![decoherence_is_Your_failure](img/decoherence_is_Your_failure.png)
+
 The empirical dominance of NLSE over Van der Pol is not a numerical curiosity. It validates the **Condensation Hypothesis**:
 
 > *"Decoherence isn't a wall between you and the phenomenon. Decoherence is just you failing to show up as a phase partner."* — `Fracture_Physics`
