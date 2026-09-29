@@ -19,6 +19,8 @@ Before we point this instrument at the unknown, we must answer one fundamental q
 
 ## 2. The Method: Trajectory Fingerprinting, Not Binary Detection
 
+![phases_of_transition](img/phases_of_transition.png)
+
 The XPT pipeline reconstructs the native geometry of a system's movement through phase space. Instead of compressing data into abstract components (which destroys phase relationships), we slice every transition into four phenomenological components:
 
 1.  **Onset**: The initial shock of perturbation.
