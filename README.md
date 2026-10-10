@@ -135,6 +135,7 @@ All claims are conditional and falsifiable.
 - [XPT-002: Taxonomy of Trajectories](./DOSSIERS/XPT-002_TAXONOMY.md)
 - [XPT-003: Environmental Conditions](./DOSSIERS/XPT-003_ENVIRONMENT.md)
 - [XPT-004: Protocols](./DOSSIERS/XPT-004_PROTOCOLS.md)
+- [XPT-005: FRACTURE PHYSICS](./DOSSIERS/XPT-005_FRACTURE-PHYSICS.md)
 
 ## NEURO
 
