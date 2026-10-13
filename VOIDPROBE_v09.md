@@ -20,7 +20,7 @@ Trajectory-geometry fingerprinting pipeline. It compares trajectory components a
 > We do not hunt the Foreign.
 > We first make sure the knife is sharp enough to cut only what it claims to cut.
 
----
+![VoidProbe_v09](img/VoidProbe_v09.png)
 
 ## Why Characterization
 
