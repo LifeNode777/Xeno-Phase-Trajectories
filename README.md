@@ -1,3 +1,4 @@
+![VoidProbe_v09](img/VoidProbe_v09.png)
 
 # XPT: We Don't Hunt Aliens (yet 🙃)
  — We Map the Conditions for Contact
