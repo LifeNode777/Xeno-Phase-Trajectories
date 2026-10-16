@@ -1,0 +1,147 @@
+{
+  "schema_version": "0.9",
+  "artifact_type": "baseline_audit_manifest",
+  "generated": "2026-10-15",
+  "status": "PARTIALLY_REPRODUCED",
+  "audit_id": "XPT-BASELINE-AUDIT-v0.9-001",
+  "parent_repository": "LifeNode777/Xeno-Phase-Trajectories",
+  "claimed_baseline": {
+    "label": "Synthetic Benchmark v0.8 / CONTRACT_v1",
+    "claimed_commit": "506946431a2742a57610e8237a63d763a39b059e",
+    "claimed_branch": "main",
+    "claimed_contract_version": "XPT-CONTRACT-v1 (Component Profile v0.8)",
+    "claimed_date": "2026-09-21",
+    "notes": "Core artifacts predate the latest README-image commit. CONTRACT_v1.md is the authoritative protocol document."
+  },
+  "audit_scope": {
+    "required_checks": [
+      "exact_commit_and_files_for_v0.8_benchmark",
+      "CONTRACT_v1_version_and_location",
+      "machine_readable_result_artifacts_present",
+      "reproducible_figures_or_summary_tables",
+      "independent_reproduction_within_tolerances",
+      "discrepancies_among_README_LOG_contract_scripts_results"
+    ]
+  },
+  "code_identity": {
+    "repository_url": "https://github.com/LifeNode777/Xeno-Phase-Trajectories",
+    "commit_sha": "506946431a2742a57610e8237a63d763a39b059e",
+    "branch": "main",
+    "tag": null,
+    "files_hash": {
+      "description": "Critical v0.8 files identified; SHA-256 of content not computed in this pass (raw content inspected)",
+      "entries": {
+        "sim/CONTRACT_v1.md": "present",
+        "sim/XPT_GPT_component_v0_8_LN.py": "present",
+        "sim/XPT_GPT_component_v0_8_LN_results.json": "present",
+        "sim/XPT_Grok_v0_8_component.py": "present",
+        "sim/XPT_Grok_v0_8_component_results.json": "present"
+      }
+    },
+    "pipeline_version_or_identifier": "XPT-component-v0.8-LN"
+  },
+  "configuration": {
+    "embedding_dimension_m": 4,
+    "time_delay_tau": "first_MI_minimum (not fixed 1)",
+    "alignment": "native R4 Procrustes (resampled to 128 pts)",
+    "observable": "quadratic / energy-like scalar",
+    "null_model": "phase-randomized",
+    "temporal_shifts": ["±5", "±10"],
+    "dual_gate": {
+      "primary": "q95(D_CC) < q05(D_CN)",
+      "secondary": "median(D_CN) / median(D_CC) > 10",
+      "shift_stability_required": true
+    },
+    "notes": "Verified against XPT_GPT_component_v0_8_LN.py. τ is MI-derived. Seed is 20260920."
+  },
+  "seed_family": {
+    "base_seed": 20260920,
+    "description": "SEED=20260920; per-system offset SEED+1000*k; per-run +i. Later planning docs sometimes used 20260921 — that is not the v0.8 baseline seed.",
+    "verified": true
+  },
+  "environment": {
+    "python_version": "GPT leg 3.13.5 / Grok leg 3.12.3 (from CONTRACT_v1.md)",
+    "dependencies_file": null,
+    "dependencies_sha256": null,
+    "platform": "AI execution environments (no container image published)",
+    "runtime_image_or_notes": "NumPy 2.3.5 (GPT) / 2.4.4 (Grok). No requirements.txt or lockfile present."
+  },
+  "input_generation": {
+    "procedure_documented": true,
+    "location": "sim/XPT_GPT_component_v0_8_LN.py and sim/XPT_Grok_v0_8_component.py (generators for NLSE, Duffing, VanDerPol, Rossler)",
+    "notes": "Fully self-contained. Rossler generator exists but was not executed in the v0.8 results payload."
+  },
+  "original_result_artifacts": {
+    "status": "PRESENT",
+    "listed_paths": [
+      "sim/XPT_GPT_component_v0_8_LN_results.json",
+      "sim/XPT_Grok_v0_8_component_results.json",
+      "sim/CONTRACT_v1.md"
+    ],
+    "missing": [],
+    "hashes": {}
+  },
+  "reproduction": {
+    "command_or_steps": "python sim/XPT_GPT_component_v0_8_LN.py --output ... ; analogous for Grok leg",
+    "attempted": true,
+    "outcome": "PARTIALLY_REPRODUCED",
+    "tolerances_declared": "None numeric; CONTRACT claims 100% payload convergence between legs",
+    "notes": "Numerical spot-checks match CONTRACT (NLSE onset ratio ~62.44, 4/4 STABLE; Duffing onset-only; VanDerPol invisible). Reproduction is cross-AI-leg, not classical independent re-execution."
+  },
+  "discrepancies": [
+    {
+      "id": "D1",
+      "description": "README claims REPRODUCED; Gate 0 finds only PARTIALLY_REPRODUCED",
+      "severity": "medium"
+    },
+    {
+      "id": "D2",
+      "description": "Seed in code is 20260920; some later docs used 20260921",
+      "severity": "low"
+    },
+    {
+      "id": "D3",
+      "description": "τ is first MI minimum in code; some docs assume fixed τ=1",
+      "severity": "medium"
+    },
+    {
+      "id": "D4",
+      "description": "Rossler generator present but not executed in v0.8 results",
+      "severity": "low"
+    },
+    {
+      "id": "D5",
+      "description": "Reproduction rests on cross-AI agreement, not independent non-AI run with environment hash",
+      "severity": "medium-high"
+    }
+  ],
+  "audit_outcome": {
+    "status": "PARTIALLY_REPRODUCED",
+    "possible_values": [
+      "REPRODUCED",
+      "PARTIALLY_REPRODUCED",
+      "NOT_REPRODUCIBLE",
+      "BLOCKED_MISSING_ARTIFACTS"
+    ],
+    "summary": "v0.8 artifacts exist, are internally consistent, and two AI legs converge on the published verdicts. Classical independent reproduction and full environment provenance are still missing. Five limitations carried forward.",
+    "limitations_carried_forward": [
+      "Baseline τ is first MI minimum, not fixed τ=1",
+      "Baseline seed is 20260920 (not 20260921)",
+      "No classical non-AI independent reproduction with environment hash",
+      "Rossler not part of executed v0.8 payload",
+      "README REPRODUCED claim is stronger than Gate 0 evidence"
+    ]
+  },
+  "auditor": {
+    "role": "AI executor (Grok) under Human Anchor direction",
+    "date": "2026-10-15",
+    "notes": "Inspection performed on live public repository. AI-generated explanations are not themselves evidence that a new run occurred; this audit verifies existing published artifacts."
+  },
+  "related_documents": [
+    "sim/XPT_Instrument_Characterization_v0.9.md",
+    "sim/baseline_audit/BASELINE_AUDIT.md",
+    "sim/CONTRACT_v1.md",
+    "VOIDPROBE_v09.md",
+    "LOG.md"
+  ]
+}
