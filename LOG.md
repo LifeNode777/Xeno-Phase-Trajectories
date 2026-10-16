@@ -47,3 +47,11 @@
 - Decision: v0.7 RETAIN_AS_BASELINE, NOT_UNIVERSAL.
 - Next preregistered question: blind onset fix (H-a local-MAD threshold / H-b CUSUM; H-c complexity detector for Rossler). Acceptance: median |err| <= 1 s, within_1s >= 0.9.
 - Open: provenance fields (executor, code/ensemble sha256) for this audit JSON.
+
+## 2026-10-16: Gate 0 baseline audit — Grok audit and manifest added
+- **Action:** Added the Grok Gate 0 audit report and its machine-readable manifest under `sim/baseline_audit/`.
+- **README status:** Changed the Synthetic Benchmark v0.8 status from `REPRODUCED` to `PARTIALLY_REPRODUCED`.
+- **Decision:** Gate 0 remains CLOSED with a `PARTIALLY_REPRODUCED` verdict. The status reflects the evidence and limitations documented in the baseline audit; it does not claim complete independent reproduction.
+- **Scope:** This update records the audit and evidence-status correction. It does not modify the historical findings or establish Gate 1 validity.
+- **Next step:** Develop and evaluate a dedicated Gate 1 blind-onset experiment. Gate 1 requires its own implementation, predefined acceptance criteria, execution provenance, and results. Existing v0.8 results are historical baseline evidence, not Gate 1 validation.
+- **Evidence:** `sim/baseline_audit/BASELINE_AUDIT_1_Grok_Gate_0.md`; `sim/baseline_audit/Manifest_Grok_Gate_0.json`.
