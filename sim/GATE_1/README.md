@@ -1,6 +1,5 @@
-
 # GATE 1: Blind Onset Validity Protocol
-
+![GATE 1 — Blind Onset Validity Protocol](../../img/GATE_1_README.png)
 **Status:** `DESIGN / IMPLEMENTATION PENDING`  
 **Gate 0 Dependency:** `CLOSED` — `PARTIALLY_REPRODUCED` (Baseline v0.8)  
 **Core Principle:** *The detector must find the wound without being handed the map.*
