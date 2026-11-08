@@ -1,0 +1,18 @@
+[    58s] NLSE_A done
+[   111s] NLSE_P done
+[   118s] DUFFING done
+[   125s] VDP done
+[   133s] ROSSLER done
+
+cond|noise      ceil  | center hit  | cusum_lv hit  med  FA  verdict | spectral hit  med  FA  verdict
+NLSE_A|0.05     1.00 | 0.15        | 0.95   0.06 0.00 STABLE                  | 1.00   0.09 0.00 STABLE
+NLSE_A|0.2      0.83 | 0.15        | 0.77   0.12 0.04 PARTIAL                 | 1.00   0.12 0.00 PARTIAL
+NLSE_P|0.05     1.00 | 0.11        | 0.50   0.12 0.01 PARTIAL                 | 1.00   0.03 0.00 STABLE
+NLSE_P|0.2      1.00 | 0.11        | 0.39   0.25 0.04 INVISIBLE               | 1.00   0.03 0.00 STABLE
+DUFFING|0.05    1.00 | 0.14        | 0.14   1.72 0.18 FALSE_POSITIVE_CANDIDATE| 0.97   0.19 0.00 STABLE
+DUFFING|0.2     0.96 | 0.14        | 0.11   1.88 0.21 FALSE_POSITIVE_CANDIDATE| 0.97   0.19 0.00 STABLE
+VDP|0.05        1.00 | 0.16        | 0.18   1.41 0.18 FALSE_POSITIVE_CANDIDATE| 1.00   0.12 0.00 STABLE
+VDP|0.2         1.00 | 0.16        | 0.11   1.64 0.21 FALSE_POSITIVE_CANDIDATE| 1.00   0.12 0.00 STABLE
+ROSSLER|0.05    1.00 | 0.15        | 0.75   0.38 0.17 FALSE_POSITIVE_CANDIDATE| 0.00    nan 0.00 INVISIBLE
+ROSSLER|0.2     0.63 | 0.15        | 0.57   0.92 0.11 FALSE_POSITIVE_CANDIDATE| 0.00    nan 0.00 INVISIBLE
+canary clean: True
