@@ -55,3 +55,20 @@
 - **Scope:** This update records the audit and evidence-status correction. It does not modify the historical findings or establish Gate 1 validity.
 - **Next step:** Develop and evaluate a dedicated Gate 1 blind-onset experiment. Gate 1 requires its own implementation, predefined acceptance criteria, execution provenance, and results. Existing v0.8 results are historical baseline evidence, not Gate 1 validation.
 - **Evidence:** `sim/baseline_audit/BASELINE_AUDIT_1_Grok_Gate_0.md`; `sim/baseline_audit/Manifest_Grok_Gate_0.json`.
+
+## 2026-11-08: Gate 1 Blind Onset Validity Protocol — "Quarantine Chamber" Infrastructure Established
+- **Action:** Constructed the complete, isolated infrastructure for GATE 1: Blind Onset Validity, fulfilling Phase 1 of the `ACTION_PLAN_Gate1.md` specification. The framework enforces "blindness by process, not by hash" to rigorously characterize change-point detectors without look-ahead bias.
+- **Artifacts Added:**
+  - `generator.py`: Synthetic trajectory engine (NLSE_A/P, Duffing, VDP, Rössler) that strictly separates physical truth (`t_true`) from observable detectability (`t_det`) via an oracle mechanism.
+  - `run_blind.py`: Subprocess isolation wrapper executing detectors in a sterile temp directory with minimal env vars, featuring `leakage_canary()` to actively probe and block any seed/truth data leakage.
+  - `evaluator.py`: Statistical judge utilizing Wilson score intervals for False Alarm (FA) rates, enforcing strict capability verdicts (`STABLE`, `PARTIAL`, `INVISIBLE`, `FALSE_POSITIVE_CANDIDATE`), and validating against the `oracle_ceiling`.
+  - `baseline_detector.py`: Reference implementations (`center` prior-guess, `cusum_lv` variance-based, `spectral` frequency-based) to prove the benchmark's ability to discriminate and penalize naive approaches.
+  - `run_calibration.py`: Orchestrator for exploratory hyperparameter tuning (FA <= 2% budget) and blind execution.
+- **Exploratory Calibration Results:** 
+  - Confirmed `center` is vetoed (100% FA).
+  - Proved `cusum_lv` is structurally `INVISIBLE` to NLSE_P (phase-only transitions).
+  - Validated the `leakage_canary_clean: true` guarantee across all baseline runs.
+- **Decision/Status:** Gate 1 infrastructure is now `ESTABLISHED`. The current commit intentionally omits the actual XPT detector implementation to maintain protocol integrity. All calibration runs are explicitly labeled as "EXPLORATORY".
+- **Scope:** This update provides the foundational quarantine chamber and baseline characterization tools. It does not yet constitute a validation of the XPT detector itself.
+- **Next step:** Implement the XPT detector within this isolated framework, execute the pre-registered blind onset evaluation, and log the formal Gate 1 verdict based on the predefined acceptance criteria (median |err| <= 1s, within_1s >= 0.9).
+- **Evidence:** `sim/GATE_1/ACTION_PLAN_Gate1.md`, `sim/GATE_1/generator.py`, `sim/GATE_1/run_blind.py`, `sim/GATE_1/evaluator.py`, `sim/GATE_1/baseline_detector.py`, `sim/GATE_1/run_calibration.py`, `sim/GATE_1/calibration_report.json`, `sim/GATE_1/calib.log`.
