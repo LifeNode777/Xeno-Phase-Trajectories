@@ -1,6 +1,6 @@
 # GATE 1: Blind Onset Validity Protocol
 ![GATE 1 — Blind Onset Validity Protocol](../../img/GATE_1_README.png)
-**Status:** `DESIGN / IMPLEMENTATION PENDING`  
+**Status:** `INFRASTRUCTURE COMPLETE / BASELINE CALIBRATED` (XPT Detector Pending)
 **Gate 0 Dependency:** `CLOSED` — `PARTIALLY_REPRODUCED` (Baseline v0.8)  
 **Core Principle:** *The detector must find the wound without being handed the map.*
 
@@ -8,6 +8,8 @@
 Gate 1 validates a single, non-negotiable capability of the XPT instrument: **Can it independently detect and localize the onset of a dynamical transition using *only* the observable trajectory, without any access to ground-truth timing, intervention parameters, or pre-aligned windows?**
 
 This is a strict test of *blind onset localization*. It is entirely decoupled from the geometric component profiling (v0.8). A system can pass v0.8 profiling but **FAIL** Gate 1 if it cannot find the onset blindly.
+
+![Quarantine Chamber](https://raw.githubusercontent.com/LifeNode777/TOKIO_DRIFT_44/main/BONUS/XPT_GATE_1_QUARANTINE_CHAMBER.png)
 
 ## 2. The Adversarial Research Question
 Can the instrument localize the transition onset within a predefined temporal tolerance, while simultaneously proving it is **NOT** doing any of the following:
