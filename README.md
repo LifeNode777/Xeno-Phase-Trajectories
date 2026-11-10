@@ -3,7 +3,7 @@
 # XPT: We Don't Hunt Aliens (yet 🙃)
  — We Map the Conditions for Contact
 
-**Status:** `PARTIALLY_REPRODUCED` (Synthetic Benchmark v0.8) · `HYPOTHESIS` (Biological Translation)  
+**Status:** Gate 0 - `PARTIALLY_REPRODUCED` (Synthetic Benchmark v0.8) / Gate 1 - `infrastructure ESTABLISHED` · `HYPOTHESIS` (Biological Translation)  
 **Context:** Xeno-Phase-Trajectories R&D · Process > State Paradigm
 
 ## 1. The Core Idea: Stop Looking for Objects, Start Mapping Transitions
