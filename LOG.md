@@ -72,3 +72,23 @@
 - **Scope:** This update provides the foundational quarantine chamber and baseline characterization tools. It does not yet constitute a validation of the XPT detector itself.
 - **Next step:** Implement the XPT detector within this isolated framework, execute the pre-registered blind onset evaluation, and log the formal Gate 1 verdict based on the predefined acceptance criteria (median |err| <= 1s, within_1s >= 0.9).
 - **Evidence:** `sim/GATE_1/ACTION_PLAN_Gate1.md`, `sim/GATE_1/generator.py`, `sim/GATE_1/run_blind.py`, `sim/GATE_1/evaluator.py`, `sim/GATE_1/baseline_detector.py`, `sim/GATE_1/run_calibration.py`, `sim/GATE_1/calibration_report.json`, `sim/GATE_1/calib.log`.
+
+## 2026-11-15: Gate 1 Confirmatory Baseline Characterization (Dual-Executor Reproduction)
+- **Action:** Executed `run_confirmatory.py` (seed 20261110, N=200) on two
+  independent executors: Grok and Qwen.
+  Same code (sha256: 283662ad), same calibration cfgs (sha256: 3273ec57),
+  same seed. Both runs completed with canary clean pre+post.
+- **Result:** 20/20 verdict agreement across all 10 cells (5 systems × 2 noise
+  levels × 2 methods). Key findings:
+  - cusum_lv: INVISIBLE on NLSE_P (both nu), FPC on Duffing/VdP/Rössler,
+    STABLE/PARTIAL on NLSE_A. Confirms structural blindness to phase-only
+    transitions and lack of selectivity against non-solitonic dynamics.
+  - spectral: STABLE on NLSE_A/NLSE_P/Duffing/VdP (FA=0), INVISIBLE on
+    Rössler. Strong baseline with known limitation on deterministic chaos.
+- **Status:** BASELINE CHARACTERIZATION COMPLETE. XPT detector NOT_EVALUATED.
+  This is not a Gate 1 verdict — it characterizes the instrument chamber and
+  provides the reference pattern that detector.py must beat or complement.
+- **Evidence:** (only Grok files, i dont have Qwen files because this cocksucker cannot generate files for this shit after running code in his lame sandbox blocked by limits)
+  - `sim/GATE_1/run_confirmatory.py`
+  - `sim/GATE_1/confirmatory_report.json`
+- **Next step:** hard drugs, fuck work 🙃
