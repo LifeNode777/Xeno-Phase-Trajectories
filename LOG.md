@@ -73,7 +73,7 @@
 - **Next step:** Implement the XPT detector within this isolated framework, execute the pre-registered blind onset evaluation, and log the formal Gate 1 verdict based on the predefined acceptance criteria (median |err| <= 1s, within_1s >= 0.9).
 - **Evidence:** `sim/GATE_1/ACTION_PLAN_Gate1.md`, `sim/GATE_1/generator.py`, `sim/GATE_1/run_blind.py`, `sim/GATE_1/evaluator.py`, `sim/GATE_1/baseline_detector.py`, `sim/GATE_1/run_calibration.py`, `sim/GATE_1/calibration_report.json`, `sim/GATE_1/calib.log`.
 
-## 2026-11-15: Gate 1 Confirmatory Baseline Characterization (Dual-Executor Reproduction)
+## 2026-11-14: Gate 1 Confirmatory Baseline Characterization (Dual-Executor Reproduction)
 - **Action:** Executed `run_confirmatory.py` (seed 20261110, N=200) on two
   independent executors: Grok and Qwen.
   Same code (sha256: 283662ad), same calibration cfgs (sha256: 3273ec57),
@@ -92,3 +92,13 @@
   - `sim/GATE_1/run_confirmatory.py`
   - `sim/GATE_1/confirmatory_report.json`
 - **Next step:** hard drugs, fuck work 🙃
+
+## 2026-11-14: Gate 1 evaluator amendment v1.1 — fixed timing reference
+- **Change:** Updated `sim/GATE_1/evaluator.py` so that capability verdicts always use onset-localization accuracy relative to the physical intervention time, `t_true`. Removed the automatic switch to `t_det` and the associated `CEILING_MIN` constant.
+- **Reason:** `t_det` is an operational reference defined by a sustained deviation threshold between the intervened trajectory and its unmodified twin. It is not a proven earliest-detection bound. A detector can accurately localize the intervention without matching this auxiliary reference.
+- **Observed case:** In the existing baseline report, spectral detection on `NLSE_A` at noise level `0.20` achieved 197/197 hits within ±1 T_c of `t_true`, a median absolute error of 0.09375 T_c, and 0/200 false alarms. The previous evaluator nevertheless returned `PARTIAL` because it switched the hit-rate reference to `t_det`.
+- **Compatibility:** Both timing-reference metrics remain in the report. The legacy field `oracle_ceiling_primary` is retained as a diagnostic statistic, with an explicit comment that it is not a proven performance ceiling. The returned `adjusted` flag is retained and is always `False`.
+- **Scope:** Numerical acceptance thresholds, false-alarm checks, abstention limits, and the existing `t_det >= 0` trial-eligibility rule are unchanged. Reported timing performance therefore remains conditional on that eligibility rule.
+- **Verification:** Applying the revised decision rule to the 20 stored baseline method/condition results changes one verdict label: spectral `NLSE_A|0.2`, from `PARTIAL` to `STABLE`. Targeted checks confirm that false-alarm, eligibility, and abstention vetoes remain active. This is a re-evaluation of stored metrics, not a new benchmark execution.
+- **Evidence preservation:** The original confirmatory report remains unchanged. Any re-evaluation must be saved separately and identified as using evaluator v1.1. Future confirmatory runs must identify the amended evaluator and freeze its rules before execution.
+- **Status:** Evaluation-rule correction only. The XPT detector remains `NOT_EVALUATED`; this amendment does not establish a Gate 1 verdict for XPT.
