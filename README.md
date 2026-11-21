@@ -1,4 +1,4 @@
-![VoidProbe_v09](img/VoidProbe_v09.png)
+![🤔](img/first_github-actions_run_1.png)
 
 # XPT: We Don't Hunt Aliens (yet 🙃)
  — We Map the Conditions for Contact
