@@ -1,0 +1,97 @@
+{
+  "NLSE_A": {
+    "cusum_lv": {
+      "method": "cusum_lv",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 500,
+      "lag_comp": -4,
+      "W": 32
+    },
+    "spectral": {
+      "method": "spectral",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 3,
+      "lag_comp": -39,
+      "Wf": 96,
+      "step": 4
+    }
+  },
+  "NLSE_P": {
+    "cusum_lv": {
+      "method": "cusum_lv",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 300,
+      "lag_comp": -2,
+      "W": 32
+    },
+    "spectral": {
+      "method": "spectral",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 3,
+      "lag_comp": -41,
+      "Wf": 96,
+      "step": 4
+    }
+  },
+  "DUFFING": {
+    "cusum_lv": {
+      "method": "cusum_lv",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 800,
+      "lag_comp": 50,
+      "W": 32
+    },
+    "spectral": {
+      "method": "spectral",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 3,
+      "lag_comp": -43,
+      "Wf": 96,
+      "step": 4
+    }
+  },
+  "VDP": {
+    "cusum_lv": {
+      "method": "cusum_lv",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 800,
+      "lag_comp": 40,
+      "W": 32
+    },
+    "spectral": {
+      "method": "spectral",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 3,
+      "lag_comp": -61,
+      "Wf": 96,
+      "step": 4
+    }
+  },
+  "ROSSLER": {
+    "cusum_lv": {
+      "method": "cusum_lv",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 1500,
+      "lag_comp": -5,
+      "W": 32
+    },
+    "spectral": {
+      "method": "spectral",
+      "warmup": 256,
+      "k": 1.5,
+      "h": 3,
+      "lag_comp": 0,
+      "Wf": 96,
+      "step": 4
+    }
+  }
+}
